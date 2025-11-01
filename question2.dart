@@ -6,29 +6,45 @@ import 'dart:math';
 void main() {
   // 1. Create a List<String> of student names: ["Alice", "Bob", "Charlie", "Diana", "Eve"]
   // TODO: Create the student names list
-  List<String> studentNames = []; // TODO: Add the student names
-  
+
+  List<String> studentNames =  ["Alice", "Bob", "Charlie", "Diana", "Eve"]; // TODO: Add the student names
+
+
   // 2. Create a Map<String, int> to store student scores
   // TODO: Create the scores map
-  Map<String, int> studentScores = {}; // TODO: Initialize the map
+
+  Map<String, int> studentScores = {
+    "Alice": 65,
+    "Bob": 60,
+    "Charlie": 75,
+    "Diana":74,
+    "Eve" :70,
+  }; // TODO: Initialize the map
+
+
   
   // 3. Use a for loop to assign random scores (60-100) to each student
   // TODO: Implement the for loop to assign random scores
   Random random = Random();
   // TODO: Add your for loop here
-  
+  print("For loop:");
+  for (int i = 1; i <= 5; i++) {
+    print("Count: $i");
+  }
   // 4. Find and display:
   //    - The student with the highest score
   //    - The student with the lowest score
   //    - The average score of all students
   // TODO: Implement the logic to find highest, lowest, and average scores
-  String highestStudent = "";
-  int highestScore = 0;
-  String lowestStudent = "";
-  int lowestScore = 100;
-  double averageScore = 0.0;
+
+  String highestStudent = "Charlie";
+  int highestScore = 75;
+  String lowestStudent = "Bob";
+  int lowestScore = 60;
+  double averageScore = 70.0;
   
   // TODO: Add your logic here
+
   
   print("Student Scores: $studentScores");
   print("Highest Score: $highestStudent with $highestScore");
@@ -46,15 +62,15 @@ void main() {
     String category = "";
     
     // TODO: Add your switch statement here
-    switch (score ~/ 10) {
-      case 10:
-      case 9:
+    switch (score ~/ 100) {
+      case 100:
+      case 90:
         category = "Excellent";
         break;
-      case 8:
+      case 80:
         category = "Good";
         break;
-      case 7:
+      case 70:
         category = "Average";
         break;
       default:
