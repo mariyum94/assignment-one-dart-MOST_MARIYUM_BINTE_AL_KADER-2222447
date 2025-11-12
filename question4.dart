@@ -99,6 +99,5 @@ void main() {
     vehicle.start();
     vehicle.stop();
     print("${vehicle.brand} age: ${vehicle.calculateAge()} years");
-    print("");
   }
 }
