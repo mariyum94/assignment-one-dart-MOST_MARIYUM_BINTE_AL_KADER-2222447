@@ -21,6 +21,11 @@ class BankAccount {
   //    - deposit(double amount): Add money to account
   // TODO: Implement the deposit method
   void deposit(double amount) {
+    if (amount > 0){
+      balance +=amount;}
+    else {
+      print("Invalid deposit amount");
+    }
     // TODO: Add the amount to balance
 
 
@@ -29,6 +34,13 @@ class BankAccount {
   //    - withdraw(double amount): Remove money from account (check for sufficient funds)
   // TODO: Implement the withdraw method
   void withdraw(double amount) {
+    if (amount <= balance){
+      balance -=amount;
+
+    }
+    else{
+      print("Insufficient funds for withdral of $amount from  $accountNumber");
+    }
     // TODO: Check for sufficient funds and subtract amount
     // TODO: Print error message if insufficient funds
   }
@@ -37,12 +49,13 @@ class BankAccount {
   // TODO: Implement the getBalance method
   double getBalance() {
     // TODO: Return the current balance
-    return 0.0; // TODO: Replace with actual balance
+    return balance; // TODO: Replace with actual balance
   }
 
   //    - displayAccountInfo(): Show account details
   // TODO: Implement the displayAccountInfo method
   void displayAccountInfo() {
+    print("Acount : $accountNumber, Holder : $accountHolder,Type :$accountType, Balance : $balance");
     // TODO: Display account information
   }
 
