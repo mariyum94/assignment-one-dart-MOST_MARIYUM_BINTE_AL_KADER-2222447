@@ -23,7 +23,7 @@ mixin Payable {
 mixin Reportable {
   String generateReport(String employeeName, String department) {
     // TODO: Generate report
-    return "Generating report..."; // Placeholder - replace with actual implementation
+    return "Monthly report for $employeeName in $department department"; // Placeholder - replace with actual implementation
   }
 }
 
@@ -66,7 +66,7 @@ class Manager extends Employee with Payable, Reportable {
   @override
   double getBaseSalary() {
     // TODO: Return manager base salary
-    return 80000.0; // Placeholder - replace with actual implementation
+    return 8000.0; // Placeholder - replace with actual implementation
   }
   
   @override
@@ -88,13 +88,13 @@ class Developer extends Employee with Payable {
   @override
   String getJobTitle() {
     // TODO: Return developer job title
-    return "developer"; // Placeholder - replace with actual implementation
+    return "Senior Developer"; // Placeholder - replace with actual implementation
   }
   
   @override
   double getBaseSalary() {
     // TODO: Return developer base salary
-    return 60000.0; // Placeholder - replace with actual implementation
+    return 6000.0; // Placeholder - replace with actual implementation
   }
   
   @override

@@ -39,7 +39,7 @@ class BankAccount {
 
     }
     else{
-      print("Insufficient funds for withdral of $amount from  $accountNumber");
+      print("Insufficient funds for withdral of $amount from $accountNumber");
     }
     // TODO: Check for sufficient funds and subtract amount
     // TODO: Print error message if insufficient funds
